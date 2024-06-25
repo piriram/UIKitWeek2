@@ -64,20 +64,26 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ITN-v2-sHB">
                                 <rect key="frame" x="25" y="455" width="311" height="196"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqD-R3-wpH">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="65.333333333333329"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqD-R3-wpH">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="65.333333333333329"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
+                                        <connections>
+                                            <action selector="squareButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ie-PK-yzx"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1H-hI-CcS">
-                                        <rect key="frame" x="0.0" y="65.333333333333371" width="75" height="65.333333333333314"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1H-hI-CcS">
+                                        <rect key="frame" x="0.0" y="65.333333333333371" width="49" height="65.333333333333314"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoo-ek-rPz">
-                                        <rect key="frame" x="0.0" y="130.66666666666663" width="75" height="65.333333333333314"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoo-ek-rPz">
+                                        <rect key="frame" x="0.0" y="130.66666666666663" width="49" height="65.333333333333314"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="square" catalog="system"/>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -113,6 +119,9 @@
                     </view>
                     <connections>
                         <outlet property="containerView" destination="tpF-My-RIu" id="60Z-xZ-FEs"/>
+                        <outletCollection property="squareButton" destination="TqD-R3-wpH" collectionClass="NSMutableArray" id="6Vx-Hw-TDl"/>
+                        <outletCollection property="squareButton" destination="T1H-hI-CcS" collectionClass="NSMutableArray" id="s2X-Vf-u1Z"/>
+                        <outletCollection property="squareButton" destination="xoo-ek-rPz" collectionClass="NSMutableArray" id="KmY-Mj-eAU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -121,6 +130,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="square" catalog="system" width="128" height="114"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
