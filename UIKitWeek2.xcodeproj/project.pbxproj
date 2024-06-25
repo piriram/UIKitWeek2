@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		211D149C2C28639600493B63 /* CustomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D149B2C28639600493B63 /* CustomContainerView.swift */; };
+		211D149C2C28639600493B63 /* CircleCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D149B2C28639600493B63 /* CircleCheckBox.swift */; };
+		211D149E2C293C2000493B63 /* SquearCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211D149D2C293C2000493B63 /* SquearCheckBox.swift */; };
 		2149A5C72C27E6C300E70046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149A5C62C27E6C300E70046 /* AppDelegate.swift */; };
 		2149A5C92C27E6C300E70046 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149A5C82C27E6C300E70046 /* SceneDelegate.swift */; };
 		2149A5CB2C27E6C300E70046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2149A5CA2C27E6C300E70046 /* ViewController.swift */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		211D149B2C28639600493B63 /* CustomContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerView.swift; sourceTree = "<group>"; };
+		211D149B2C28639600493B63 /* CircleCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCheckBox.swift; sourceTree = "<group>"; };
+		211D149D2C293C2000493B63 /* SquearCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquearCheckBox.swift; sourceTree = "<group>"; };
 		2149A5C32C27E6C300E70046 /* UIKitWeek2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitWeek2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2149A5C62C27E6C300E70046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2149A5C82C27E6C300E70046 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +67,8 @@
 				2149A5CF2C27E6C400E70046 /* Assets.xcassets */,
 				2149A5D12C27E6C400E70046 /* LaunchScreen.storyboard */,
 				2149A5D42C27E6C400E70046 /* Info.plist */,
-				211D149B2C28639600493B63 /* CustomContainerView.swift */,
+				211D149B2C28639600493B63 /* CircleCheckBox.swift */,
+				211D149D2C293C2000493B63 /* SquearCheckBox.swift */,
 			);
 			path = UIKitWeek2;
 			sourceTree = "<group>";
@@ -142,7 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2149A5CB2C27E6C300E70046 /* ViewController.swift in Sources */,
-				211D149C2C28639600493B63 /* CustomContainerView.swift in Sources */,
+				211D149E2C293C2000493B63 /* SquearCheckBox.swift in Sources */,
+				211D149C2C28639600493B63 /* CircleCheckBox.swift in Sources */,
 				2149A5C72C27E6C300E70046 /* AppDelegate.swift in Sources */,
 				2149A5C92C27E6C300E70046 /* SceneDelegate.swift in Sources */,
 			);
