@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.squareButton.forEach {
+            $0.setImage(UIImage(systemName: "square"), for: .normal) // 초기 이미지 설정
             $0.addTarget(self, action: #selector(squareButton(_:)), for: .touchUpInside)
         }
     }
